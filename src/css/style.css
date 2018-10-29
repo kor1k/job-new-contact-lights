@@ -14,5 +14,9 @@
     justify-content: center;
     align-items: center;
     color: red;
+}
 
+.nav-bar-logo {
+    font-size: 40px;
+    margin-right: 5rem;
 }
