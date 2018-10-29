@@ -1,32 +1,76 @@
-.nav {
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 57px;
-    width: 100%;
-    background-color: rgba(0,0,0,0.3);
+* {
+    text-decoration: none;
+    list-style: none;
+    background-image: url("/src/images/main-bg-img.jpg");
 }
 
-.nav-item {
-    margin: 20px;
-    font-size: 20px;
+.test {
+    background-image: url("/src/images/main-bg-img.jpg");
+    height: 93vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.test {
+    font-size: 50px;
+    margin: auto 20rem;
+}
+
+.nav {
+    margin: auto 20rem;
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+}
+
+.nav-bar-items {
+    display: flex;
+}
+
+.nav-bar-item {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: red;
+    margin: 1rem;
+    color: white;
+    font-size: 1.8rem;
+    transition: .3s;
+}
+
+
+.nav-bar-item:hover {
+    color: black;
 }
 
 .nav-bar-logo {
-    font-size: 40px;
-    margin-right: 5rem;
+    transition: .4s;
 }
 
-.header-video {
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*width: 80%;*/
-    height: 500px;
-    margin-top: 3rem;
+.nav-bar-logo:hover {
+    filter: brightness(4) invert(3);
+}
+
+.nav-bar-logo-img {
+    margin-right: 2rem;
+    width: 4rem;
+    height: 3rem;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    margin-top: 10rem;
+    font-size: 100px;
+    color: green;
 }
