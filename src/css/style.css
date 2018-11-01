@@ -1,14 +1,3 @@
-/*@media screen and (max-width: 320px){*/
-/*.container {*/
-/*width: 320px;*/
-/*margin: 0 auto;*/
-/*}*/
-
-/*.video {*/
-/*width: 320px;*/
-/*}*/
-/*}*/
-
 * {
     text-decoration: none;
     list-style: none;
@@ -35,6 +24,8 @@
 }
 
 .nav-bar {
+    z-index: 9999;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,29 +69,134 @@
 }
 
 .video {
+    margin-top: 7rem;
+}
+
+/*.video {*/
+/*display: flex;*/
+/*justify-content: center;*/
+/*align-items: center;*/
+/*text-align: center;*/
+/*margin-top: 5rem;*/
+/*font-size: 100px;*/
+/*color: green;*/
+/*height: 50vh;*/
+/*background-color: gray;*/
+/*margin-bottom: 7rem;*/
+/*}*/
+
+.slider {
+    display: flex;
+}
+
+.vinyl1-img {
+    width: 900px;
+    height: 750px;
+}
+
+.slider-music-info {
+    margin-top: 14rem;
+    margin-left: 5rem;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    display: inline-block;
+    /*margin: 20px;*/
+}
+
+.content-in-slider {
+    /*margin: 2rem;*/
+}
+
+.content-in-slider-information {
+    color: lightseagreen;
+}
+
+.content-in-slider {
+    font-size: 21px;
+    color: white;
+}
+
+.specs-vinyl {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+}
+
+.specs-info-vinyl {
+    font-size: 16px;
+}
+
+.links {
+    display: flex;
+    margin-top: 60px;
+}
+
+.link-items {
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #333333;
+    border-radius: 3px;
+    background-color: rgba(243, 243, 243, 0);
+    width: 48px;
+    height: 46px;
+}
+
+.links-second-row {
+
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 5rem;
-    font-size: 100px;
-    color: green;
-    height: 50vh;
-    background-color: gray;
-    margin-bottom: 7rem;
 }
 
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: green;
-    font-size: 150px;
-    height: 50vh;
-    margin-top: 5rem;
-    margin-bottom: 7rem;
-    background-color: gray;
+.link-items:hover {
+    border-color: #ae804e;
 }
+
+.fab, .fa-soundcloud, .fa-music {
+    color: white;
+}
+
+/*.slider {*/
+/*display: flex;*/
+/*justify-content: center;*/
+/*!*flex-direction: column;*!*/
+/*}*/
+
+/*.content-in-slider {*/
+/*display: flex;*/
+/*color: white;*/
+/*font-size: 25px;*/
+/*margin-top: 1rem;*/
+/*margin-bottom: 1rem;*/
+/*}*/
+
+/*.vinyl1-img {*/
+/*display: flex;*/
+/*justify-content: center;*/
+/*align-items: center;*/
+/*!*width: 700px;*!*/
+/*height: 500px;*/
+/*}*/
+
+/*.slider-music-info {*/
+/*display: flex;*/
+/*justify-content: center;*/
+/*flex-direction: column;*/
+/*margin-left: 3rem;*/
+/*}*/
+
+/*.content-in-slider-information {*/
+/*color: lightseagreen;*/
+/*padding-left: 10px;*/
+/*}*/
 
 .singles-title {
     font-size: 5rem;
@@ -212,7 +308,6 @@
     /*background-color: rgba(0,0,0,0.3);*/
 }
 
-
 .footer-items {
     display: flex;
     /*justify-content: center;*/
@@ -234,7 +329,7 @@
     text-align: center;
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 415px) {
     .container {
         width: 320px;
         margin: 0 auto;
@@ -295,14 +390,56 @@
         cursor: pointer;
     }
 
-    .video {
-        margin-top: 5rem;
-        width: 320px;
-        height: 300px;
-        font-size: 4rem;
-        margin-bottom: 5rem;
+    .vinyl1-img {
+        width: 300px;
+        height: 200px;
     }
 
+    .slider {
+        margin-left: 1rem;
+        display: inline-block;
+        text-align: left;
+    }
+
+    .slider {
+        display: flex;
+        justify-content: center;
+        /*flex-direction: column;*/
+    }
+
+    .content-in-slider {
+        display: flex;
+        color: white;
+        font-size: 25px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .vinyl1-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+    }
+
+    /*.slider-music-info {*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*flex-direction: column;*/
+    /*margin-left: 3rem;*/
+    /*}*/
+    .content-in-slider-information {
+        color: lightseagreen;
+        padding-left: 10px;
+    }
+
+    /*.video {*/
+    /*margin-top: 5rem;*/
+    /*width: 320px;*/
+    /*height: 300px;*/
+    /*font-size: 4rem;*/
+    /*margin-bottom: 5rem;*/
+    /*}*/
     .content {
         width: 320px;
         height: 300px;

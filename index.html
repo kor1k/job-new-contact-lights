@@ -1,11 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns:http="http://www.w3.org/1999/xhtml" xmlns:https="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Lights</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+          integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"/>
     <link rel="stylesheet" href="src/css/style.css">
@@ -52,10 +54,59 @@
     </section>
 
     <!--//TODO: video in container + autoplay + centered-->
-    <section class="container video">VIDEO</section>
+    <section class="video">
+        <div style="padding:56.25% 0 0 0;position:relative;">
+            <iframe src="https://player.vimeo.com/video/52370423?autoplay=1&color=ff0179&title=0&byline=0&portrait=0"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen
+                    mozallowfullscreen allowfullscreen></iframe>
+        </div>
+
+    </section>
 
     <!--//TODO: images of albums in slider + description of album + music serisec below-->
-    <section class="container content">VINYL</section>
+    <section class="container slider">
+        <img class="vinyl1-img" src="src/images/vinyl-1.png" alt="">
+        <div class="slider-music-info">
+            <!--<div class="content-in-slider">Genre: <span class="content-in-slider-information"> Lorem ipsum dolor.</span>-->
+            <!--</div>-->
+            <!--<div class="content-in-slider">Genre: <span class="content-in-slider-information"> Lorem ipsum dolor.</span>-->
+            <!--</div>-->
+            <!--<div class="content-in-slider">Genre: <span class="content-in-slider-information"> Lorem ipsum dolor.</span>-->
+            <!--</div>-->
+            <!--<div class="content-in-slider">Genre: <span class="content-in-slider-information"> Lorem ipsum dolor.</span>-->
+            <!--</div>-->
+            <!--<div class="content-in-slider">Genre: <span class="content-in-slider-information"> Lorem ipsum dolor.</span>-->
+            <!--</div>-->
+            <div class="specs-vinyl">LABEL: &nbsp; <span class="specs-info-vinyl">other text</span></div>
+            <div class="specs-vinyl">RELEASED: &nbsp; <span class="specs-info-vinyl">other text</span></div>
+            <div class="specs-vinyl">GENRE: &nbsp;<span class="specs-info-vinyl">other text</span></div>
+            <div class="specs-vinyl">STYLES: &nbsp;<span class="specs-info-vinyl">other text</span></div>
+            <div id="music" class="links" style="font-size: 0.5rem;">
+                <a href="https://www.apple.com/ru/music/" target="_blank">
+                    <div class="link-items"><i class="fab fa-apple fa-3x"></i></div>
+                </a>
+                <a href="https://soundcloud.com/" target="_blank">
+                    <div class="link-items"><i class="fab fa-soundcloud fa-3x"></i></div>
+                </a>
+                <a href="https://www.spotify.com/int/why-not-available/" target="_blank">
+                    <div class="link-items"><i class="fab fa-spotify fa-3x"></i></div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="link-items"><i class="fab fa-soundcloud fa-3x"></i></div>
+                </a>
+            </div>
+            <div class="links-second-row" style="font-size: 0.5rem;">
+                <a href="#" target="_blank">
+                    <div class="link-items"><i class="fab fa-soundcloud fa-3x"></i></div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="link-items"><i class="fab fa-soundcloud fa-3x"></i></div>
+                </a>
+            </div>
+
+        </div>
+        <!--//TODO: stream services links-->
+    </section>
 
 
     <!--//TODO: images of singles + hover on image with text + fadeIn effect-->
@@ -73,7 +124,8 @@
     <section class="container about">
         <div class="about-title">About</div>
         <div class="about-items">
-            <img class="yarik-img" src="src/images/yarik-privet.jpg" alt="">
+            <a href=""> <img class="yarik-img" src="src/images/yarik-privet.jpg" alt=""></a>
+
             <p class="filling-in-about">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci asperiores, atque
                 blanditiis et
@@ -88,12 +140,21 @@
     <section class="container mockups">
         <div class="mockups-title">Mockups</div>
         <div class="mockups-items">
-            <div class="mockups-item-mac">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, mollitia?
-            </div>
-            <div class="mockups-item-example"></div>
-            <div class="mockups-item-example"></div>
-            <div class="mockups-item-example"></div>
-            <div class="mockups-item-example"></div>
+            <a href="">
+                <div class="mockups-item-mac"></div>
+            </a>
+            <a href="">
+                <div class="mockups-item-example"></div>
+            </a>
+            <a href="">
+                <div class="mockups-item-example"></div>
+            </a>
+            <a href="">
+                <div class="mockups-item-example"></div>
+            </a>
+            <a href="">
+                <div class="mockups-item-example"></div>
+            </a>
         </div>
     </section>
 
@@ -109,6 +170,7 @@
 
 </section>
 
+<script src="https://player.vimeo.com/api/player.js"></script>
 <script src="src/js/script.js"></script>
 </body>
 </html>
