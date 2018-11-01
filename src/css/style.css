@@ -32,13 +32,19 @@
 .nav {
     display: flex;
     justify-content: center;
-    height: 4rem;
+    /*height: 4rem;*/
+    /*background-color: rgba(24, 24, 24, 0.7);*/
+
 }
 
 .nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
     background-color: rgba(24, 24, 24, 0.7);
 }
 
@@ -83,7 +89,7 @@
     font-size: 100px;
     color: green;
     height: 50vh;
-    background-color: white;
+    background-color: gray;
     margin-bottom: 7rem;
 }
 
@@ -96,7 +102,7 @@
     height: 50vh;
     margin-top: 5rem;
     margin-bottom: 7rem;
-    background-color: white;
+    background-color: gray;
 }
 
 .singles-title {
@@ -117,7 +123,7 @@
 
 .single-item {
     background-image: url("../images/single-testt.jpg");
-    background-color: #cccccc;
+    /*background-color: #cccccc;*/
     /*height: 500px;*/
     background-position: center;
     background-repeat: no-repeat;
@@ -134,6 +140,53 @@
     font-weight: 700;
 }
 
+.description {
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+
+.description-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+/*.description-img {*/
+    /*width: 430px;*/
+    /*height: 500px;*/
+/*}*/
+
+.description-img-yarik {
+    width: 450px;
+    height: 450px;
+    transition: .4s;
+    transform-origin: center;
+}
+
+.description-img-yarik:hover {
+    /*transform: translate(10%);*/
+    /*transform: rotate(180deg);*/
+    width: 550px;
+    height: 550px;
+}
+
+.description-filling {
+    float: left;
+    /*color: white;*/
+    color: orange;
+    font-size: 21px;
+}
+
+.test-photo {
+    display: inline-block;
+}
+
+
+
+
 @media screen and (max-width: 320px) {
     .container {
         width: 320px;
@@ -141,13 +194,15 @@
     }
 
     .nav-bar-items {
+        position: fixed;
         overflow: hidden;
         clear: both;
         display: none;
     }
 
     .nav-bar {
-        margin-left: 2rem;
+        position: fixed;
+        padding-left: 2rem;
     }
 
     .burger {
@@ -194,6 +249,7 @@
     }
 
     .video {
+        margin-top: 5rem;
         width: 320px;
         height: 300px;
         font-size: 4rem;
@@ -211,6 +267,7 @@
         margin-top: 3rem;
         width: 320px;
         font-size: 4rem;
+        margin-bottom: 3rem;
     }
 
     .singles-items {
@@ -220,4 +277,35 @@
         margin: 1rem;
     }
 
+    .singles-title {
+        margin-bottom: 2rem;
+    }
+
+    .single-item {
+        margin: 1rem;
+    }
+
+    .description-title {
+        font-size: 4rem;
+    }
+
+    .description-img-yarik {
+        display: flex;
+        justify-content: center;
+        /*margin: 1rem;*/
+        width: 250px;
+        height: 250px;
+    }
+
+    .description-img-yarik:hover {
+        width: 300px;
+        height: 300px;
+    }
+
+    .description-filling {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        /*align-items: center;*/
+        text-align: center;
+    }
 }
