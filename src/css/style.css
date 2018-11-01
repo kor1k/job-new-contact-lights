@@ -72,19 +72,6 @@
     margin-top: 7rem;
 }
 
-/*.video {*/
-/*display: flex;*/
-/*justify-content: center;*/
-/*align-items: center;*/
-/*text-align: center;*/
-/*margin-top: 5rem;*/
-/*font-size: 100px;*/
-/*color: green;*/
-/*height: 50vh;*/
-/*background-color: gray;*/
-/*margin-bottom: 7rem;*/
-/*}*/
-
 .slider {
     display: flex;
 }
@@ -97,10 +84,7 @@
 .slider-music-info {
     margin-top: 14rem;
     margin-left: 5rem;
-    /*display: flex;*/
-    /*justify-content: center;*/
     display: inline-block;
-    /*margin: 20px;*/
 }
 
 .content-in-slider {
@@ -216,8 +200,7 @@
 
 .single-item {
     background-image: url("../images/single-testt.jpg");
-    /*background-color: #cccccc;*/
-    /*height: 500px;*/
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -275,8 +258,7 @@
 
 .mockups-item-mac {
     background-image: url("../images/mockup-mac-book.png");
-    /*background-color: #cccccc;*/
-    /*height: 500px;*/
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -286,8 +268,7 @@
 
 .mockups-item-example {
     background-image: url("../images/devices-set.jpg");
-    /*background-color: #cccccc;*/
-    /*height: 500px;*/
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -305,13 +286,10 @@
     justify-content: center;
     height: 5rem;
     background-color: gray;
-    /*background-color: rgba(0,0,0,0.3);*/
 }
 
 .footer-items {
     display: flex;
-    /*justify-content: center;*/
-    /*align-items: center;*/
 }
 
 .footer-filling {
@@ -404,7 +382,6 @@
     .slider {
         display: flex;
         justify-content: center;
-        /*flex-direction: column;*/
     }
 
     .content-in-slider {
@@ -422,24 +399,11 @@
         height: 500px;
     }
 
-    /*.slider-music-info {*/
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*flex-direction: column;*/
-    /*margin-left: 3rem;*/
-    /*}*/
     .content-in-slider-information {
         color: lightseagreen;
         padding-left: 10px;
     }
 
-    /*.video {*/
-    /*margin-top: 5rem;*/
-    /*width: 320px;*/
-    /*height: 300px;*/
-    /*font-size: 4rem;*/
-    /*margin-bottom: 5rem;*/
-    /*}*/
     .content {
         width: 320px;
         height: 300px;
