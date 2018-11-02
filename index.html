@@ -6,6 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Lights</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
           integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
@@ -50,46 +54,128 @@
 
     <!--//TODO: video in container + autoplay + centered-->
     <!--<section class="video">-->
-        <!--<div style="padding:56.25% 0 0 0;position:relative;">-->
-            <!--<iframe src="https://player.vimeo.com/video/52370423?autoplay=1&color=ff0179&title=0&byline=0&portrait=0"-->
-                    <!--style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen-->
-                    <!--mozallowfullscreen allowfullscreen></iframe>-->
-        <!--</div>-->
-<!---->
+    <!--<div style="padding:56.25% 0 0 0;position:relative;">-->
+    <!--<iframe src="https://player.vimeo.com/video/52370423?autoplay=1&color=ff0179&title=0&byline=0&portrait=0"-->
+    <!--style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen-->
+    <!--mozallowfullscreen allowfullscreen></iframe>-->
+    <!--</div>-->
+    <!---->
     <!--</section>-->
+
+
+    <!--<div id="slider">-->
+    <!--<a href="#" class="control_next">></a>-->
+    <!--<a href="#" class="control_prev"><</a>-->
+    <!--<ul>-->
+    <!--<li><img class="vinyl1-img" src="src/images/vinyl-1.png" alt=""></li>-->
+    <!--<li style="background: #aaa;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci alias-->
+    <!--autem, consectetur corporis doloremque doloribus ea enim eos eveniet ex fugiat id ipsa ipsum iste minima-->
+    <!--nemo nostrum provident quam quia quis sapiente tenetur ut voluptatibus voluptatum? A assumenda atque-->
+    <!--culpa cupiditate, dolorem eaque eius facilis fuga illo in inventore laboriosam mollitia nostrum numquam-->
+    <!--obcaecati perspiciatis quas quidem quis repellendus similique! Ea illum incidunt nemo tenetur. Cumque-->
+    <!--debitis harum perspiciatis, qui saepe suscipit voluptas! Architecto atque aut, cum delectus deserunt-->
+    <!--dolor eligendi iste molestias nesciunt, possimus ratione sequi totam. Beatae doloribus in iusto maiores-->
+    <!--necessitatibus nihil soluta sunt temporibus.-->
+    <!--</li>-->
+    <!--<li>SLIDE 3</li>-->
+    <!--<li style="background: #aaa;">SLIDE 4</li>-->
+    <!--</ul>-->
+    <!--</div>-->
+
+    <!--<div id="scene">-->
+    <!--<div id="left-zone">-->
+    <!--<ul class="list">-->
+    <!--<li class="item"><input type="radio"-->
+    <!--id="radio_The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)"-->
+    <!--name="basic_carousel"-->
+    <!--value="The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)"-->
+    <!--checked="checked"/><label class="label_strawberry"-->
+    <!--for="radio_The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)">strawberry</label>-->
+    <!--<div-->
+    <!--class="content content_strawberry"><span class="picto"></span>-->
+    <!--<h1>strawberry</h1>-->
+    <!--<p>The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely-->
+    <!--grown hybrid species of the genus Fragaria (collectively known as the strawberries)</p>-->
+    <!--</div>-->
+    <!--</li>-->
+    <!--<li class="item"><input type="radio"-->
+    <!--id="radio_A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa."-->
+    <!--name="basic_carousel"-->
+    <!--value="A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa."-->
+    <!--/><label class="label_banana"-->
+    <!--for="radio_A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa.">banana</label>-->
+    <!--<div class="content content_banana"><span class="picto"></span>-->
+    <!--<h1>banana</h1>-->
+    <!--<p>A banana is an edible fruit, botanically a berry, produced by several kinds of large-->
+    <!--herbaceous flowering plants in the genus Musa.</p>-->
+    <!--</div>-->
+    <!--</li>-->
+    <!--<li class="item"><input type="radio"-->
+    <!--id="radio_The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus."-->
+    <!--name="basic_carousel"-->
+    <!--value="The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus."-->
+    <!--/><label class="label_apple"-->
+    <!--for="radio_The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus.">apple</label>-->
+    <!--<div-->
+    <!--class="content content_apple"><span class="picto"></span>-->
+    <!--<h1>apple</h1>-->
+    <!--<p>The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its-->
+    <!--sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the-->
+    <!--most widely grown species in the genus Malus.</p>-->
+    <!--</div>-->
+    <!--</li>-->
+    <!--<li class="item"><input type="radio"-->
+    <!--id="radio_The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."-->
+    <!--name="basic_carousel"-->
+    <!--value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."-->
+    <!--/><label class="label_orange"-->
+    <!--for="radio_The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">orange</label>-->
+    <!--<div class="content content_orange"><span class="picto"></span>-->
+    <!--<h1>orange</h1>-->
+    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam architecto corporis-->
+    <!--dolore dolorem error id nam quia repellendus! Asperiores cumque doloremque facere hic-->
+    <!--itaque, maxime natus porro ratione tempore?</p>-->
+    <!--</div>-->
+    <!--</li>-->
+    <!--</ul>-->
+    <!--</div>-->
+    <!--<div id="middle-border"></div>-->
+    <!--<div id="right-zone"></div>-->
+    <!--</div>-->
+
 
     <!--//TODO: images of albums in slider + description of album + music serisec below-->
     <section class="container slider">
-        <img class="vinyl1-img" src="src/images/vinyl-1.png" alt="">
-        <div class="slider-music-info">
-            <div class="specs-vinyl">LABEL: &nbsp; <span class="specs-info-vinyl">other text</span></div>
-            <div class="specs-vinyl">RELEASED: &nbsp; <span class="specs-info-vinyl">other text</span></div>
-            <div class="specs-vinyl">GENRE: &nbsp;<span class="specs-info-vinyl">other text</span></div>
-            <div class="specs-vinyl">STYLES: &nbsp;<span class="specs-info-vinyl">other text</span></div>
-            <div id="music" class="links" style="font-size: 0.5rem;">
-                <a href="https://www.apple.com/ru/music/" target="_blank">
-                    <div class="link-items"><i class="fab fa-apple fa-3x"></i></div>
-                </a>
-                <a href="https://soundcloud.com/" target="_blank">
-                    <div class="link-items"><i class="fab fa-soundcloud fa-3x"></i></div>
-                </a>
-                <a href="https://www.spotify.com/int/why-not-available/" target="_blank">
-                    <div class="link-items"><i class="fab fa-spotify fa-3x"></i></div>
-                </a>
-                <a href="#" target="_blank">
-                    <div class="link-items"><i class="fab fa-soundcloud fa-3x"></i></div>
-                </a>
-            </div>
-            <div class="links-second-row" style="font-size: 0.5rem;">
-                <a href="#" target="_blank">
-                    <div class="link-items"><i class="fab fa-soundcloud fa-3x"></i></div>
-                </a>
-                <a href="#" target="_blank">
-                    <div class="link-items"><i class="fab fa-soundcloud fa-3x"></i></div>
-                </a>
-            </div>
+    <img class="vinyl1-img" src="src/images/vinyl-1.png" alt="">
+    <div class="slider-music-info">
+    <div class="specs-vinyl">LABEL: &nbsp; <span class="specs-info-vinyl">other text</span></div>
+    <div class="specs-vinyl">RELEASED: &nbsp; <span class="specs-info-vinyl">other text</span></div>
+    <div class="specs-vinyl">GENRE: &nbsp;<span class="specs-info-vinyl">other text</span></div>
+    <div class="specs-vinyl">STYLES: &nbsp;<span class="specs-info-vinyl">other text</span></div>
+    <div id="music" class="links" style="font-size: 0.5rem;">
+    <a href="https://www.apple.com/ru/music/" target="_blank">
+    <div class="link-items"><i class="fab fa-apple fa-3x"></i></div>
+    </a>
+    <a href="https://soundcloud.com/" target="_blank">
+    <div class="link-items"><i class="fab fa-soundcloud fa-3x"></i></div>
+    </a>
+    <a href="https://www.spotify.com/int/why-not-available/" target="_blank">
+    <div class="link-items"><i class="fab fa-spotify fa-3x"></i></div>
+    </a>
+    <a href="#" target="_blank">
+    <div class="link-items"><i class="fab fa-soundcloud fa-3x"></i></div>
+    </a>
+    </div>
+    <div class="links-second-row" style="font-size: 0.5rem;">
+    <a href="#" target="_blank">
+    <div class="link-items"><i class="fab fa-soundcloud fa-3x"></i></div>
+    </a>
+    <a href="#" target="_blank">
+    <div class="link-items"><i class="fab fa-soundcloud fa-3x"></i></div>
+    </a>
+    </div>
 
-        </div>
+    </div>
     </section>
 
 
