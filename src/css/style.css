@@ -27,7 +27,7 @@
     z-index: 9999;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     overflow: hidden;
     background-color: #333;
@@ -51,10 +51,11 @@
 }
 
 .nav-bar-item:hover {
-    color: black;
+    color: orange;
 }
 
 .nav-bar-logo {
+    margin-right: 15rem;
     transition: .4s;
 }
 
@@ -307,10 +308,21 @@
     text-align: center;
 }
 
+
+
+
+
+
+
+
 @media screen and (max-width: 415px) {
     .container {
         width: 320px;
         margin: 0 auto;
+    }
+
+    .nav-bar-logo {
+        margin-right: 3rem;
     }
 
     .nav-bar-items {
@@ -330,6 +342,8 @@
     }
 
     .bar1 {
+        box-sizing: border-box;
+        border-radius: 10px;
         width: 35px;
         height: 3px;
         background-color: white;
@@ -339,6 +353,8 @@
     }
 
     .bar2, .bar3 {
+        box-sizing: border-box;
+        border-radius: 10px;
         width: 35px;
         height: 3px;
         background-color: white;
@@ -464,5 +480,4 @@
     .footer-filling {
         font-size: 16px
     }
-
 }
