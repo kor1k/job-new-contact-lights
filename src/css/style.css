@@ -1,8 +1,9 @@
 * {
     text-decoration: none;
     list-style: none;
-    background-image: url("/src/images/main-bg-img.jpg");
-    font-family: 'Crimson Text', serif;
+    /*background-image: url("/src/images/background.jpg");*/
+    /*font-family: 'Crimson Text', serif;*/
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 .container {
@@ -158,7 +159,7 @@
     color: white;
 }
 
-.singles-items-row-1, .singles-items-row-2, .singles-items-row-3 {
+.singles-items-row-1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -393,7 +394,7 @@
         margin-bottom: 3rem;
     }
 
-    .singles-items-ro1, .singles-items-row-2 {
+    .singles-items-ro1 {
         display: flex;
         justify-content: center;
         flex-direction: row;

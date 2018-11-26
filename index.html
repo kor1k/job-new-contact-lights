@@ -6,6 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Lights</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script
             src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -15,162 +18,193 @@
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"/>
     <link rel="stylesheet" href="src/css/style.css">
+
 </head>
 <body>
-<section class="background">
-    <!--//TODO: nav with hover effects-->
-    <section class="nav">
-        <div class="container nav-bar">
-            <div class="nav-bar-logo">
-                <a href=""> <img class="nav-bar-logo-img" src="src/images/nav-logo.png" alt=""></a>
-            </div>
-            <div class="nav-bar-items">
-                <a href="#">
-                    <div class="nav-bar-item">first</div>
-                </a>
-                <a href="#">
-                    <div class="nav-bar-item">second</div>
-                </a>
-                <a href="#">
-                    <div class="nav-bar-item">third</div>
-                </a>
-                <a href="#">
-                    <div class="nav-bar-item">fourth</div>
-                </a>
-                <a href="#">
-                    <div class="nav-bar-item">fivth</div>
-                </a>
-                <a href="#">
-                    <div class="nav-bar-item">sixth</div>
-                </a>
-            </div>
-            <div class="burger" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
+<!--<section class="background">-->
+<!--//TODO: nav with hover effects-->
+<!--<section class="nav">-->
+<!--<div class="container nav-bar">-->
+<!--<div class="nav-bar-logo">-->
+<!--<a href=""> <img class="nav-bar-logo-img" src="src/images/nav-logo.png" alt=""></a>-->
+<!--</div>-->
+<!--<div class="nav-bar-items">-->
+<!--<a href="#">-->
+<!--<div class="nav-bar-item">first</div>-->
+<!--</a>-->
+<!--<a href="#">-->
+<!--<div class="nav-bar-item">second</div>-->
+<!--</a>-->
+<!--<a href="#">-->
+<!--<div class="nav-bar-item">third</div>-->
+<!--</a>-->
+<!--<a href="#">-->
+<!--<div class="nav-bar-item">fourth</div>-->
+<!--</a>-->
+<!--<a href="#">-->
+<!--<div class="nav-bar-item">fivth</div>-->
+<!--</a>-->
+<!--<a href="#">-->
+<!--<div class="nav-bar-item">sixth</div>-->
+<!--</a>-->
+<!--</div>-->
+<!--<div class="burger" onclick="myFunction(this)">-->
+<!--<div class="bar1"></div>-->
+<!--<div class="bar2"></div>-->
+<!--<div class="bar3"></div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Contact Lights</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<!--//TODO: video in container + autoplay + centered-->
+<section class="video">
+    <div style="padding:56.25% 0 0 0;position:relative;">
+        <iframe src="https://player.vimeo.com/video/52370423?autoplay=1&color=ff0179&title=0&byline=0&portrait=0"
+                style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen
+                mozallowfullscreen allowfullscreen></iframe>
+    </div>
+</section>
+
+
+<!--//TODO: images of albums in slider + description of album + music serisec below-->
+<section class="container slider">
+    <img class="vinyl1-img" src="src/images/vinyl-1.png" alt="">
+    <div class="slider-music-info">
+        <div class="specs-vinyl">LABEL: &nbsp; <span class="specs-info-vinyl">other text</span></div>
+        <div class="specs-vinyl">RELEASED: &nbsp; <span class="specs-info-vinyl">other text</span></div>
+        <div class="specs-vinyl">GENRE: &nbsp;<span class="specs-info-vinyl">other text</span></div>
+        <div class="specs-vinyl">STYLES: &nbsp;<span class="specs-info-vinyl">other text</span></div>
+        <div id="music" class="links" style="font-size: 0.5rem;">
+            <a href="https://www.apple.com/ru/music/" target="_blank">
+                <div class="link-items"><i class="fab fa-apple fa-3x"></i></div>
+            </a>
+            <a href="https://soundcloud.com/" target="_blank">
+                <div class="link-items"><i class="fab fa-soundcloud fa-3x"></i></div>
+            </a>
+            <a href="https://www.spotify.com/int/why-not-available/" target="_blank">
+                <div class="link-items"><i class="fab fa-spotify fa-3x"></i></div>
+            </a>
+            <a href="#" target="_blank">
+                <div class="link-items"><i class="fab fa-soundcloud fa-3x"></i></div>
+            </a>
         </div>
-    </section>
-
-    <!--//TODO: video in container + autoplay + centered-->
-    <!--<section class="video">-->
-    <!--<div style="padding:56.25% 0 0 0;position:relative;">-->
-    <!--<iframe src="https://player.vimeo.com/video/52370423?autoplay=1&color=ff0179&title=0&byline=0&portrait=0"-->
-    <!--style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen-->
-    <!--mozallowfullscreen allowfullscreen></iframe>-->
-    <!--</div>-->
-    <!---->
-    <!--</section>-->
-
-
-    <!--//TODO: images of albums in slider + description of album + music serisec below-->
-    <section class="container slider">
-        <img class="vinyl1-img" src="src/images/vinyl-1.png" alt="">
-        <div class="slider-music-info">
-            <div class="specs-vinyl">LABEL: &nbsp; <span class="specs-info-vinyl">other text</span></div>
-            <div class="specs-vinyl">RELEASED: &nbsp; <span class="specs-info-vinyl">other text</span></div>
-            <div class="specs-vinyl">GENRE: &nbsp;<span class="specs-info-vinyl">other text</span></div>
-            <div class="specs-vinyl">STYLES: &nbsp;<span class="specs-info-vinyl">other text</span></div>
-            <div id="music" class="links" style="font-size: 0.5rem;">
-                <a href="https://www.apple.com/ru/music/" target="_blank">
-                    <div class="link-items"><i class="fab fa-apple fa-3x"></i></div>
-                </a>
-                <a href="https://soundcloud.com/" target="_blank">
-                    <div class="link-items"><i class="fab fa-soundcloud fa-3x"></i></div>
-                </a>
-                <a href="https://www.spotify.com/int/why-not-available/" target="_blank">
-                    <div class="link-items"><i class="fab fa-spotify fa-3x"></i></div>
-                </a>
-                <a href="#" target="_blank">
-                    <div class="link-items"><i class="fab fa-soundcloud fa-3x"></i></div>
-                </a>
-            </div>
-            <div class="links-second-row" style="font-size: 0.5rem;">
-                <a href="#" target="_blank">
-                    <div class="link-items"><i class="fab fa-soundcloud fa-3x"></i></div>
-                </a>
-                <a href="#" target="_blank">
-                    <div class="link-items"><i class="fab fa-soundcloud fa-3x"></i></div>
-                </a>
-            </div>
-
+        <div class="links-second-row" style="font-size: 0.5rem;">
+            <a href="#" target="_blank">
+                <div class="link-items"><i class="fab fa-soundcloud fa-3x"></i></div>
+            </a>
+            <a href="#" target="_blank">
+                <div class="link-items"><i class="fab fa-soundcloud fa-3x"></i></div>
+            </a>
         </div>
-    </section>
+
+    </div>
+</section>
 
 
-    <!--//TODO: images of singles + hover on image with text + fadeIn effect-->
-    <section class="container singles">
-        <div class="singles-title">Singles</div>
-        <div class="singles-items-row-1">
-            <div class="single-item"></div>
-            <div class="single-item"></div>
-            <!--<div class="singles-items-row-2">-->
-                <div class="single-item"></div>
-                <div class="single-item"></div>
-            </div>
-            <!--<div class="singles-items-row-3">-->
-                <!--<div class="single-item"></div>-->
-                <!--<div class="single-item"></div>-->
-            <!--</div>-->
-        </div>
+<!--//TODO: images of singles + hover on image with text + fadeIn effect-->
+<section class="container singles">
+    <div class="singles-title">Singles</div>
+    <div class="singles-items-row-1">
+        <div class="single-item"></div>
+        <div class="single-item"></div>
         <!--<div class="singles-items-row-2">-->
-            <!--<div class="single-item"></div>-->
-            <!--<div class="single-item"></div>-->
-        <!--</div>-->
-        <!--<div class="singles-items-row-3">-->
-            <!--<div class="single-item"></div>-->
-            <!--<div class="single-item"></div>-->
-        <!--</div>-->
-    </section>
-    <!--//TODO: about musician + photo + text wrapping around-->
-    <section class="container about">
-        <div class="about-title">About</div>
-        <div class="about-items">
-            <a href=""> <img class="yarik-img" src="src/images/yarik-privet.jpg" alt=""></a>
+        <div class="single-item"></div>
+        <div class="single-item"></div>
+    </div>
+    <!--<div class="singles-items-row-3">-->
+    <!--<div class="single-item"></div>-->
+    <!--<div class="single-item"></div>-->
+    <!--</div>-->
+    </div>
+    <!--<div class="singles-items-row-2">-->
+    <!--<div class="single-item"></div>-->
+    <!--<div class="single-item"></div>-->
+    <!--</div>-->
+    <!--<div class="singles-items-row-3">-->
+    <!--<div class="single-item"></div>-->
+    <!--<div class="single-item"></div>-->
+    <!--</div>-->
+</section>
+<!--//TODO: about musician + photo + text wrapping around-->
+<section class="container about">
+    <div class="about-title">About</div>
+    <div class="about-items">
+        <a href=""> <img class="yarik-img" src="src/images/yarik-privet.jpg" alt=""></a>
 
-            <p class="filling-in-about">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci asperiores, atque
-                blanditiis et
-                eveniet hic in, ipsum mllat, sapiente sequi suscipit tempora tenetur
-                voluptaae similique, sint unde? Ab beatae, doloremque laborum nam officiis possimus.
-                Quia?
-            </p>
-        </div>
-    </section>
+        <p class="filling-in-about">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci asperiores, atque
+            blanditiis et
+            eveniet hic in, ipsum mllat, sapiente sequi suscipit tempora tenetur
+            voluptaae similique, sint unde? Ab beatae, doloremque laborum nam officiis possimus.
+            Quia?
+        </p>
+    </div>
+</section>
 
-    <!--//TODO: mockups + link on smthng-->
-    <section class="container mockups">
-        <div class="mockups-title">Mockups</div>
-        <div class="mockups-items">
-            <a href="">
-                <div class="mockups-item-mac"></div>
-            </a>
-            <a href="">
-                <div class="mockups-item-example"></div>
-            </a>
-            <a href="">
-                <div class="mockups-item-example"></div>
-            </a>
-            <a href="">
-                <div class="mockups-item-example"></div>
-            </a>
-            <a href="">
-                <div class="mockups-item-example"></div>
-            </a>
-        </div>
-    </section>
+<!--//TODO: mockups + link on smthng-->
+<section class="container mockups">
+    <div class="mockups-title">Mockups</div>
+    <div class="mockups-items">
+        <a href="">
+            <div class="mockups-item-mac"></div>
+        </a>
+        <a href="">
+            <div class="mockups-item-example"></div>
+        </a>
+        <a href="">
+            <div class="mockups-item-example"></div>
+        </a>
+        <a href="">
+            <div class="mockups-item-example"></div>
+        </a>
+        <a href="">
+            <div class="mockups-item-example"></div>
+        </a>
+    </div>
+</section>
 
-    <!--//TODO: footer with some information-->
-    <section class="footer">
-        <div class="footer-items">
-            <div class="footer-filling">
-                <p> All Rights Reserved | Contact Lights 2018</p>
-            </div>
+<!--//TODO: footer with some information-->
+<section class="footer">
+    <div class="footer-items">
+        <div class="footer-filling">
+            <p> All Rights Reserved | Contact Lights 2018</p>
         </div>
-    </section>
+    </div>
+</section>
 
 </section>
 
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 <script src="https://player.vimeo.com/api/player.js"></script>
 <script src="src/js/script.js"></script>
 </body>
